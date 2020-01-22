@@ -1,0 +1,11 @@
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/bin/Debug/netcoreapp2.1/decisionmaker.deps.json
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/bin/Debug/netcoreapp2.1/decisionmaker.runtimeconfig.json
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/bin/Debug/netcoreapp2.1/decisionmaker.runtimeconfig.dev.json
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/bin/Debug/netcoreapp2.1/decisionmaker.dll
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/bin/Debug/netcoreapp2.1/decisionmaker.pdb
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.csprojAssemblyReference.cache
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.csproj.CoreCompileInputs.cache
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.AssemblyInfoInputs.cache
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.AssemblyInfo.cs
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.dll
+/home/master/Documents/bootcamp/Decision_Maker/decisionmaker/obj/Debug/netcoreapp2.1/decisionmaker.pdb
