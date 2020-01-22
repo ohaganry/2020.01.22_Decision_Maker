@@ -6,41 +6,65 @@ namespace decisionmaker
     {
         static void Main(string[] args)
         {
-            string again = "y";
-            while(again == "y")
+            Console.WriteLine("What is your name?");
+            string name = Console.ReadLine();
+            bool end = false;
+            while(end == false)
             {
-                Console.Write("What was your score percentage? ");
-                float percentage = float.Parse(Console.ReadLine());
-                string lettergrade = "F";
+                int userInput;
+               
+                Console.WriteLine("Give me a whole number between 1 and 100");
+                userInput = int.Parse(Console.ReadLine());
 
-                if(percentage >= 90)
+                while(userInput > 0 && userInput <= 100)
                 {
-                    lettergrade = "A";
+
+                    string status = EvenOrOdd(userInput);
+
+                    if(status == "odd")
+                    {
+                        Console.WriteLine($"{name}, your number, {userInput}, is {status}");
+                    }
+                    else
+                    {
+                        if(userInput >= 2 && userInput <= 25)
+                        {
+                            Console.WriteLine($"{name}, your number is {status} and less than 25");
+                        }
+                        else if(userInput > 25 && userInput <= 65)
+                        {
+                            Console.WriteLine($"{name}, your number is {status}");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"{name}, your number, {userInput}, is {status}");
+                        }
+                    }
+                    userInput = 0;
                 }
-                else if(percentage >= 80)
-                {
-                    lettergrade = "B";
-                }
-                else if(percentage >= 70)
-                {
-                    lettergrade = "C";
-                }
-                else if(percentage >= 60)
-                {
-                    lettergrade = "D";
-                }
-                else if(percentage >= 50)
-                {
-                    lettergrade = "E";
-                }
-                else
-                {
-                    lettergrade = "F";
-                }
-                Console.WriteLine($"Your grade is {lettergrade}");
-                Console.WriteLine("Would you like to grade another? (y/n)");
-                again = Console.ReadLine();
+                 Console.WriteLine("Would you like to try again (y/n)?");
+                    while(Console.ReadLine() == "n")
+                    {
+                        end = true;
+                        Console.WriteLine($"Thank you {name}. Goodbye");
+                        return;
+                    }
             }
+
+        }
+        public static string EvenOrOdd(int num1)
+        {
+            int remainder = num1 % 2;
+            string result;
+            if(remainder == 0)
+            {
+                result = "even";
+            }
+            else
+            {
+                result = "odd";
+            }
+            return result;
         }
     }
 }
